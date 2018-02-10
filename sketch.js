@@ -14,8 +14,11 @@ function preload() {
 
 function setup() {
   // put setup code here
-    createCanvas(800,600);
-    background(100,200,200);
+    createCanvas(800,windowHeight);
+    background(255);
+    noStroke();
+    fill(220,220,150);
+    rect(0,0,800,600);
 
     
     dropzone =select('#dropzone');
@@ -60,12 +63,23 @@ function unhighlight(){
 }
 
 function draw() {
+    
+    fill(0);
+    strokeWeight(1);
     textSize(40);
     text("Voyager converter",50,80);
     textSize(18);
-    text("Just for You Were Here",50,130);
+    text("The sound of us",50,130);
   // put drawing code here
     if (isok) {
-        image(imgArray[imgnumber],0,0,800,600);
+       // resizeCanvas(windowWidth,windowHeight)
+        background(255)
+        image(imgArray[imgnumber],0,0,800);
+        //console.log(imgArray[imgnumber]);
+       
+       
     }
+        
+
 }
+
