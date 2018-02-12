@@ -19,7 +19,7 @@ function preload() {
     imgArray.push(loadImage('LennartN.jpg'));
     imgArray.push(loadImage('mafer.jpg'));
     imgArray.push(loadImage('Marco.jpg'));
-    imgArray.push(loadImage('Max.jpg'));
+    imgArray.push(loadImage('max.jpg'));
     
 }
 
