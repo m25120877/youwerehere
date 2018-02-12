@@ -25,12 +25,21 @@ function preload() {
 
 function setup() {
   // put setup code here
-    createCanvas(1200,windowHeight);
+    createCanvas(1200,2000);
     background(255);
     noStroke();
     fill(220,220,150);
     rect(0,0,1200,300);
-
+    fill(0);
+    strokeWeight(0);
+    textSize(40);
+    text("Voyager converter ver.1",50,80);
+    textSize(30);
+    text("This is a convenience tool that helps you translate alien's language.",50,130);
+    text("They are usually friendly, and please treat them gently and politely.",50,180);
+    textSize(32);
+    fill(100);
+    text("Any problem please contact: QXJpZWwgSHVhbmcgYW5kIENhcmwgS2FuZw==",50,240);
     
     dropzone =select('#dropzone');
     dropzone.dragOver(highlight);
@@ -119,22 +128,14 @@ function getImgSize(imgSrc){
 
 function draw() {
     
-    fill(0);
-    strokeWeight(0);
-    textSize(40);
-    text("Voyager converter ver.1",50,80);
-    textSize(30);
-    text("This is a convenience tool that helps you translate alien's language.",50,130);
-    text("They are usually friendly, and please treat them gently and politely.",50,180);
-    textSize(32);
-    fill(100);
-    text("Any problem please contact: QXJpZWwgSHVhbmcgYW5kIENhcmwgS2FuZw==",50,240);
+
   // put drawing code here
     if (isok) {
         fill(255);
-        rect(0,0,1200.2000)
+        rect(0,0,1200,2000);
         image(imgArray[imgnumber],0,0);
         console.log(imgArray[imgnumber]);
        // resizeCanvas(img.width,img.height);
+        
     }
 }
