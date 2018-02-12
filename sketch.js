@@ -131,6 +131,8 @@ function draw() {
     text("Any problem please contact: QXJpZWwgSHVhbmcgYW5kIENhcmwgS2FuZw==",50,240);
   // put drawing code here
     if (isok) {
+        fill(255);
+        rect(0,0,1200.2000)
         image(imgArray[imgnumber],0,0);
         console.log(imgArray[imgnumber]);
        // resizeCanvas(img.width,img.height);
